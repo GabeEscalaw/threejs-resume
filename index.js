@@ -68,7 +68,7 @@ scene.background = spaceTexture;
 
 // Cube with Picture
 
-const gabeTexture = new THREE.TextureLoader().load('creative Shot.jpg')
+const gabeTexture = new THREE.TextureLoader().load('Creative Shot.jpg')
 
 const gabe = new THREE.Mesh(
     new THREE.BoxGeometry(3, 3, 3),
