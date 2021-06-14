@@ -26,7 +26,7 @@ renderer.render( scene, camera ); // Renderer == Draw
 // Torus
 
 const geometry = new THREE.TorusGeometry( 10, 3, 16, 100 )
-const material = new THREE.MeshStandardMaterial( { color: 0x00A7F0 } );
+const material = new THREE.MeshStandardMaterial( { color: 0x00A7F0, wireframe: true, vertexColors: true } );
 const torus = new THREE.Mesh( geometry, material );
 
 scene.add(torus);
@@ -68,7 +68,7 @@ scene.background = spaceTexture;
 
 // Cube with Picture
 
-const gabeTexture = new THREE.TextureLoader().load('creative.jpg')
+const gabeTexture = new THREE.TextureLoader().load('tesseract.jpg')
 
 const gabe = new THREE.Mesh(
     new THREE.BoxGeometry(3, 3, 3),
